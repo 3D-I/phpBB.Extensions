@@ -1,0 +1,19 @@
+services:
+    vinabb.happyanniversary.listener:
+        class: vinabb\happyanniversary\event\listener
+        arguments:
+            - '@cache.driver'
+            - '@config'
+            - '@dbal.conn'
+            - '@language'
+            - '@notification_manager'
+            - '@template'
+            - '@user'
+        tags:
+            - { name: event.listener }
+    vinabb.happyanniversary.notification.type.happy_anniversary:
+        class: vinabb\happyanniversary\notification\type\happy_anniversary
+        shared: false
+        parent: notification.type.base
+        tags:
+            - { name: notification.type }

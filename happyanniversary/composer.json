@@ -1,0 +1,34 @@
+{
+	"name": "vinabb/happyanniversary",
+	"type": "phpbb-extension",
+	"description": "",
+	"homepage": "http://vinabb.vn/",
+	"version": "0.2.0",
+	"time": "2016-09-18",
+	"license": "GPL-2.0",
+	"authors": [{
+		"name": "Khoa Nguyen",
+		"email": "nedka@vinabb.vn",
+		"homepage": "http://nedka.vn/",
+		"role": "Developer"
+	}],
+	"require": {
+		"php": ">=5.4",
+		"composer/installers": "~1.0"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Happy Anniversary",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.2.0-RC1,<3.3.0@dev"
+		},
+		"version-check": {
+			"host": "raw.githubusercontent.com",
+			"directory": "/VinaBB/phpBB.Extensions/master/update",
+			"filename": "happyanniversary.json",
+			"ssl": true
+		}
+	}
+}

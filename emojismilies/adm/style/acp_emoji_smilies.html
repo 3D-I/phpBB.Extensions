@@ -1,0 +1,36 @@
+{% include 'overall_header.html' %}
+
+<h1>{{ lang('ACP_EMOJI_SMILIES') }}</h1>
+<p>{{ lang('ACP_EMOJI_SMILIES_EXPLAIN') }}</p>
+
+<form id="acp_emoji_smilies" method="post" action="{{ U_ACTION }}">
+	<fieldset>
+		<legend>{{ lang('SETTINGS') }}</legend>
+		<dl>
+			<dt><label for="smiley_path">{{ lang('SMILIES_PATH') ~ lang('COLON') }}</label><br><span>{{ lang('SMILIES_PATH_EXPLAIN') }}</span></dt>
+			<dd><input class="text medium" type="text" name="smiley_path" id="smiley_path" value="{{ SMILEY_PATH }}" maxlength="255"></dd>
+		</dl>
+		<dl>
+			<dt><label for="smiley_type">{{ lang('SMILEY_TYPE') ~ lang('COLON') }}</label></dt>
+			<dd>
+				<label><input type="radio" class="radio" name="smiley_type" value="1" id="smiley_type"{% if SMILEY_TYPE %} checked{% endif %}> {{ lang('SMILEY_TYPE_EMOJI') }}</label>
+				<label><input type="radio" class="radio" name="smiley_type" value="0"{% if not SMILEY_TYPE %} checked{% endif %}> {{ lang('SMILEY_TYPE_IMG') }}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="emoji_type">{{ lang('EMOJI_TYPE') ~ lang('COLON') }}</label></dt>
+			<dd>
+				<label><input type="radio" class="radio" name="emoji_type" value="{{ EMOJI_TYPE_RAW }}"{% if EMOJI_TYPE == EMOJI_TYPE_RAW %} checked{% endif %}> {{ lang('EMOJI_TYPE_RAW') }}</label>
+				<label><input type="radio" class="radio" name="emoji_type" value="{{ EMOJI_TYPE_TWITTER }}" id="emoji_type"{% if EMOJI_TYPE == EMOJI_TYPE_TWITTER %} checked{% endif %}> {{ lang('EMOJI_TYPE_TWITTER') }}</label>
+				<label><input type="radio" class="radio" name="emoji_type" value="{{ EMOJI_TYPE_EMOJIONE }}"{% if EMOJI_TYPE == EMOJI_TYPE_EMOJIONE %} checked{% endif %}> {{ lang('EMOJI_TYPE_EMOJIONE') }}</label>
+			</dd>
+		</dl>
+	</fieldset>
+	<fieldset class="submit-buttons">
+		<input class="button1" type="submit" name="submit" value="{{ lang('SUBMIT') }}">
+		<input class="button2" type="reset" name="reset" value="{{ lang('RESET') }}">
+		{{ S_FORM_TOKEN }}
+	</fieldset>
+</form>
+
+{% include 'overall_footer.html' %}

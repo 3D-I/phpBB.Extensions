@@ -178,7 +178,7 @@ class listener implements EventSubscriberInterface
 				$icon_options .= '<option value="' . $icon . '"' . $selected . '>' . $icon . '</option>';
 			}
 		}
-		
+
 		$this->template->assign_vars(array(
 			'CURRENT_ICON_SRC'	=> !empty($current_icon) ? $this->ext_web_path . 'images/' . $current_icon : './images/spacer.gif',
 			'ICONS_PATH'		=> $this->ext_web_path . 'images/',

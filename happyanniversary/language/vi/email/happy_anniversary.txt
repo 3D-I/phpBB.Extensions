@@ -1,0 +1,12 @@
+Subject: Chúc mừng ngày kỷ niệm thành viên
+
+Mừng ngày kỷ niệm, {USERNAME}
+
+Vào ngày này {YEARS} năm trước, bạn đã tìm thấy {SITENAME} trên mạng và sự gắn bó giữa chúng ta bền chặt từ đó. Đây là dịp để chúng tôi chia sẻ với bạn những niềm vui ngày hôm nay, những kỷ niệm ngày hôm qua, và cùng hướng tới một tương lai tốt đẹp. Cảm ơn bạn vì đã trở thành một phần của chúng tôi.
+
+Ghé thăm {SITENAME} ngay, để chúng tôi có thể nói chúng tôi yêu bạn đến dường nào:
+{U_BOARD}
+
+Hãy luôn đồng hành cùng chúng tôi, bạn thân mến :)
+
+{EMAIL_SIG}

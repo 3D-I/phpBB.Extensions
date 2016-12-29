@@ -1,0 +1,20 @@
+{
+	"stable": {
+		"0.1": {
+			"current": "0.1.0",
+			"download": "https://github.com/VinaBB/phpBB.Extensions/releases/download/release-happyanniversary-0.1.0/Happy.Anniversary.0.1.0.zip",
+			"announcement": "http://vinabb.vn/viewtopic.php?f=7&t=19",
+			"eol": null,
+			"security": false
+		},
+		"0.2": {
+			"current": "0.2.0",
+			"download": "https://github.com/VinaBB/phpBB.Extensions/releases/download/release-happyanniversary-0.2.0/Happy.Anniversary.0.2.0.zip",
+			"announcement": "http://vinabb.vn/viewtopic.php?f=7&t=19",
+			"eol": null,
+			"security": false
+		}
+	},
+	"unstable": {
+	}
+}

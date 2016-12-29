@@ -6,6 +6,6 @@
 </script>
 
 <dl>
-	<dt><label for="group_icon">{{ lang('GROUP_ICON') }}{{ lang('COLON') }}</label></dt>
+	<dt><label for="group_icon">{{ lang('GROUP_ICON') ~ lang('COLON') }}</label></dt>
 	<dd><select name="group_icon" id="group_icon" onchange="update_image(this.options[selectedIndex].value);">{{ ICON_OPTIONS }}</select> <img src="{{ CURRENT_ICON_SRC }}" id="current_icon" alt=""></dd>
 </dl>

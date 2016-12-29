@@ -1,0 +1,12 @@
+Subject: Happy Membership Anniversary
+
+Happy Anniversary, {USERNAME}
+
+On this day {YEARS} years ago, you found {SITENAME} on the Internet and love begins here. It is the time to celebrate the joys of today, the memories of yesterday, and the hopes of tomorrow. Thanks for being part of our online community.
+
+Visit {SITENAME} now, let we can say we love you so much:
+{U_BOARD}
+
+Always beside us, Sweet Love :)
+
+{EMAIL_SIG}

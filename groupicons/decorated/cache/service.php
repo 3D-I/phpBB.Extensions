@@ -13,7 +13,7 @@ class service extends \phpbb\cache\service
 	/**
 	* Create cache: phpbb_groups
 	*/
-	function get_group_data()
+	public function get_group_data()
 	{
 		if (($group_data = $this->driver->get('_vinabb_groupicons_group_data')) === false)
 		{
@@ -41,7 +41,7 @@ class service extends \phpbb\cache\service
 	/**
 	* Create cache: phpbb_groups
 	*/
-	function get_group_data_by_name()
+	public function get_group_data_by_name()
 	{
 		if (($group_data = $this->driver->get('_vinabb_groupicons_group_data_by_name')) === false)
 		{
@@ -69,7 +69,7 @@ class service extends \phpbb\cache\service
 	/**
 	* Create cache: phpbb_groups
 	*/
-	function get_group_data_by_color()
+	public function get_group_data_by_color()
 	{
 		if (($group_data = $this->driver->get('_vinabb_groupicons_group_data_by_color')) === false)
 		{
@@ -97,7 +97,7 @@ class service extends \phpbb\cache\service
 	/**
 	* Clear cache: phpbb_groups
 	*/
-	function clear_group_data()
+	public function clear_group_data()
 	{
 		$this->driver->destroy('_vinabb_groupicons_group_data');
 		$this->driver->destroy('_vinabb_groupicons_group_data_by_name');
